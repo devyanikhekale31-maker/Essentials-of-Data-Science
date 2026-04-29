@@ -190,4 +190,28 @@ student["grade"] = "12th"     # overwrites again
 # Step 5: Final Output
 print("\nFinal Data:")
 print(student)
+# Program 4: Built-in list functions
 
+numbers = [12, 45, 7, 23, 56, 18]
+
+print("Length:", len(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+
+# Sorting the list
+sorted_numbers = sorted(numbers)
+print("Sorted list:", sorted_numbers)
+# Program 5: List created from user input
+
+n = int(input("How many numbers do you want to enter? "))
+
+numbers = []
+
+for i in range(n):
+    value = int(input(f"Enter number {i+1}: "))
+    numbers.append(value)
+
+print("The list is:", numbers)
+print("Maximum value:", max(numbers))
+print("Minimum value:", min(numbers))
